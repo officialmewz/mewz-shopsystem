@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body style="display: none;">
+    <div class="container">
+        <div class="main-interface">
+            <header class="header">
+                <div class="header-left">
+                    <div class="reputation">
+                        <span id="player-money">Saldo: 0 DKK</span>
+                    </div>
+                </div>
+                
+                <div class="header-right">
+                    <div class="location-name" id="location-name">
+                    </div>
+                </div>
+            </header>
+
+            <nav class="category-tabs" id="main-tabs">
+                <button class="tab-btn active" data-category="MAD">MAD</button>
+                <button class="tab-btn" data-category="DRIKKE">DRIKKE</button>
+            </nav>
+
+
+            <div class="main-content">
+                <div class="content-grid" id="content-grid">
+                    <div class="weapons-grid">
+                        <div id="items-container" class="weapons-container">
+                        </div>
+                    </div>
+
+                    <div class="weapon-details" id="item-details">
+                        <div id="basket-sidebar" class="basket-sidebar">
+                            <div class="basket-title-section">
+                                <h1 class="basket-title">Indkøbskurv</h1>
+                                <div class="basket-item-count" id="basket-item-count">0 items</div>
+                            </div>
+                            <div class="basket-divider"></div>
+                            <div id="basket-items-sidebar" class="basket-items-sidebar">
+                            </div>
+                            <div class="basket-summary-section">
+                                <div class="basket-summary-row">
+                                    <span class="basket-summary-label">Subtotal</span>
+                                    <span class="basket-summary-value" id="basket-subtotal">0.00 DKK</span>
+                                </div>
+                                <div class="basket-summary-row total-row">
+                                    <span class="basket-summary-label">Total</span>
+                                    <span class="basket-summary-value" id="basket-total">0.00 DKK</span>
+                                </div>
+                            </div>
+                            <button id="purchase-all-btn" class="basket-pay-btn" disabled>
+                                Betal
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
